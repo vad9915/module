@@ -1,0 +1,39 @@
+
+.anim {
+	width: 80px;
+	height: 80px;
+	margin: 30px auto;
+	background-color: red;
+	animation-name: spin;
+	animation-duration: 2s;
+	position: absolute;
+}
+
+.anim2 {
+	width: 80px;
+	height: 80px;
+	margin: 30px auto;
+	background-color: green;
+	animation-name: spin2;
+	animation-duration:2s;
+	position: static;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		background-color: grey;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin2{
+	0% {
+		transform: border-left(10px);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
